@@ -62,7 +62,7 @@ For anything **`< 0.60`** run the following link command
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-background-downloader')
+      implementation "com.github.tonyofrancis.Fetch:xfetch2:3.1.6"
   	```
 
 ### iOS - Extra Mandatory Step
@@ -266,7 +266,17 @@ An absolute path to the app's documents directory. It is recommended that you us
 `Network.ALL` - Default ✅
 
 ## Author
-Developed by [Elad Gil](https://github.com/ptelad) of [Eko](http://www.helloeko.com)
+Original project developed by [Elad Gil](https://github.com/ptelad) of [Eko](http://www.helloeko.com).
+
+## Updated By
+This updated version was improved and maintained by [Abdul Mateen](https://github.com/abdulmateentechbits).
+
+## Original Project
+You can find the original project at [Original Project Repository](link-to-original-repository), which was developed by Elad Gil.
+
+## Description
+This updated version of the project, maintained by Abdul Mateen, addresses critical dependency issues that were causing the project to fail on Android. Major dependencies have been updated, resulting in a perfectly functional project on the Android platform. Additionally, [mention any other improvements or fixes you've made to the project if applicable].
+
 
 ## License
 Apache 2
