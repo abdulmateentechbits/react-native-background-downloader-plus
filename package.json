@@ -10,9 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abdulmateentechbits/react-native-background-downloader-plus"
+    "url": "git+https://github.com/abdulmateentechbits/react-native-background-downloader-plus.git"
   },
-  "keywords": ["react-native", "background downloader", "Android fix"],
+  "keywords": [
+    "react-native",
+    "background downloader",
+    "Android fix"
+  ],
   "files": [
     "README.md",
     "LICENSE",
