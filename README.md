@@ -274,7 +274,7 @@ This updated version was improved and maintained by [Abdul Mateen](https://githu
 You can find the original project at [Original Project Repository](link-to-original-repository), which was developed by Elad Gil.
 
 ## Description
-This updated version of the project, maintained by Abdul Mateen, addresses critical dependency issues that were causing the project to fail on Android. Major dependencies have been updated, resulting in a perfectly functional project on the Android platform. Additionally, [mention any other improvements or fixes you've made to the project if applicable].
+This updated version of the project, maintained by Abdul Mateen, addresses critical dependency issues that were causing the project to fail on Android. Major dependencies have been updated, resulting in a perfectly functional project on the Android platform.
 
 
 ## License
