@@ -1,4 +1,4 @@
-![react-native-background-downloader banner](https://raw.githubusercontent.com/abdulmateentechbits/abdulmateentechbits/master/bg%20downlaoder.png)
+![react-native-background-downloader-plus banner](https://raw.githubusercontent.com/abdulmateentechbits/abdulmateentechbits/master/bg%20downlaoder.png)
 
 [![npm version](https://badge.fury.io/js/react-native-background-downloader.svg)](https://badge.fury.io/js/react-native-background-downloader)
 
