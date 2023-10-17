@@ -16,7 +16,7 @@ On Android we are simulating this process with a wonderful library called [Fetch
 
 The real challenge of using this method is making sure the app's UI is always up-to-date with the downloads that are happening in another process because your app might startup from scratch while the downloads are still running.
 
-`react-native-background-downloader` gives you an easy API to both downloading large files and re-attaching to those downloads once your app launches again.
+` react-native-background-downloader-plus` gives you an easy API to both downloading large files and re-attaching to those downloads once your app launches again.
 
 > **Please Note** - This library was created to better facilitate background downloading on iOS. If you're not aiming to to use the download-in-background functionality, there are better solutions like [RNFS.downloadFile()](https://github.com/itinance/react-native-fs#downloadfileoptions-downloadfileoptions--jobid-number-promise-promisedownloadresult-) which will results in a more stable download experience for your app.
 
@@ -28,16 +28,16 @@ The real challenge of using this method is making sure the app's UI is always up
 
 ## Getting started
 
-`$ yarn add react-native-background-downloader`
+`$ yarn add  react-native-background-downloader-plus`
 
-For **`RN <= 0.57.0`** use `$ yarn add react-native-background-downloader@1.1.0`
+For **`RN <= 0.57.0`** use `$ yarn add  react-native-background-downloader-plus@1.1.0`
 
 ### Mostly automatic installation
 Any React Native version **`>= 0.60`** supports autolinking so nothing should be done.
 
 For anything **`< 0.60`** run the following link command
 
-`$ react-native link react-native-background-downloader`
+`$ react-native link  react-native-background-downloader-plus`
 
 ### Manual installation
 
@@ -45,7 +45,7 @@ For anything **`< 0.60`** run the following link command
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-background-downloader` and add `RNBackgroundDownloader.xcodeproj`
+2. Go to `node_modules` ➜ ` react-native-background-downloader-plus` and add `RNBackgroundDownloader.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNBackgroundDownloader.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)
 
@@ -56,8 +56,8 @@ For anything **`< 0.60`** run the following link command
   - Add `new RNBackgroundDownloaderPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-background-downloader'
-  	project(':react-native-background-downloader').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-background-downloader/android')
+  	include ': react-native-background-downloader-plus'
+  	project(': react-native-background-downloader-plus').projectDir = new File(rootProject.projectDir, 	'../node_modules/ react-native-background-downloader-plus/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
@@ -86,7 +86,7 @@ Failing to add this code will result in canceled background downloads.
 ### Downloading a file
 
 ```javascript
-import RNBackgroundDownloader from 'react-native-background-downloader';
+import RNBackgroundDownloader from ' react-native-background-downloader-plus';
 
 let task = RNBackgroundDownloader.download({
 	id: 'file123',
@@ -121,7 +121,7 @@ What happens to your downloads after the OS stopped your app? Well, they are sti
 Add this code to app's init stage, and you'll never lose a download again!
 
 ```javascript
-import RNBackgroundDownloader from 'react-native-background-downloader';
+import RNBackgroundDownloader from ' react-native-background-downloader-plus';
 
 let lostTasks = await RNBackgroundDownloader.checkForExistingDownloads();
 for (let task of lostTasks) {
